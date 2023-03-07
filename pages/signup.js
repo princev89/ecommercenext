@@ -23,7 +23,7 @@ export default function Signup() {
         body: JSON.stringify({ name, email, password }),
       });
       if (response.ok) {
-        Router.push('/success');
+        Router.push('/');
       } else {
         alert('Error occurred during sign up');
       }

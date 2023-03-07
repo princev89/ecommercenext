@@ -3,7 +3,7 @@ import { initMongoose } from "../../lib/mongoose";
 
 
 export async function findAllProducts(){
-    return Product.find().exec();
+    return Product.find({}).exec();
 }
 
 export default async function handle(req, res){
